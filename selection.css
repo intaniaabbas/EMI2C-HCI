@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.logo-container {
+    text-align: center;
+    margin-left: 650px;
+}
+
+.logo-container h1 {
+    margin: 0;
+}
+
+.logo-container span {
+    color: green;
+}
+
+.menu-icon {
+    font-size: 30px;
+}
+
+main {
+    padding: 50px 20px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.selection-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.option {
+    background-color: #ccc;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.option img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer {
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    color: #333;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu ul li {
+    padding: 10px 20px;
+}
+
+.dropdown-menu ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-menu ul li:hover {
+    background-color: #f2f2f2;
+}
+

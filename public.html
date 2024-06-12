@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Type Selection</title>
+    <link rel="stylesheet" href="public.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="home.html" class="logo">E M I <span class="green">2</span> C</a>
+            <p class="tagline">Track Carbon, Transform Cities!</p>
+        </div>
+        <div class="menu-icon">
+            &#9776;
+        </div>
+    </header>
+
+    <main>
+        <div class="header-container">
+            <h2>Public Transportation</h2>
+            <p>Please input information below to calculate CO2.</p>
+        </div>
+
+        <form id="co2Form">
+            <label for="vehicleType">Vehicle Type</label>
+            <select id="vehicleType" name="vehicleType" required>
+                <option value="car">Car</option>
+                <option value="motorcycle">Motorcycle</option>
+                <option value="bus">Bus</option>
+                <option value="bicycle">Bicycle</option>
+            </select>
+
+            <div class="additional-options">
+                <input type="checkbox" id="saveTrip" name="saveTrip">
+                <label for="saveTrip">Would you like to save this trip?</label>
+            </div>
+
+            <div class="switch-container">
+                <a href="public-transport.html" class="switch-link">
+                    <span>&#8646; Change to Public Transportation</span>
+                </a>
+            </div>
+
+            <button type="submit" class="calculate-button">Calculate</button>
+            <div class="loading-message" id="loadingMessage">Loading...</div>
+            <div class="result-message" id="resultMessage"></div>
+        </form>
+    </main>
+
+    <footer>
+        
+        <h1>About EMI2C</h1>
+        <p>EMI2C is a revolutionary application aimed at tracking carbon emissions and 
+        transforming cities to become more sustainable. </p>
+        <p> Our goal is to provide users with indispensable tools to monitor and reduce their carbon footprint.</p>
+    <p>The fact that you care, means a lot to our Earth.</p>
+        
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
