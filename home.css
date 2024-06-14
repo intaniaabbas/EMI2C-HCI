@@ -94,37 +94,7 @@ nav .nav-button:hover {
     margin-top: 0;
 }
 
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: white;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-}
 
-.footer-links a {
-    margin-left:  50px;
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    margin: 30px;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
-}
-
-.social-media a {
-    margin-left: 50px;
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
-}
-
-.social-media a:hover {
-    text-decoration: underline;
-}
 
 .signin-link, .login-link {
     font-size: 20px;
