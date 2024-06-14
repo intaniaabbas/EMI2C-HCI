@@ -5,16 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vehicle Type Selection</title>
     <link rel="stylesheet" href="private-transport.css">
+    <link rel="stylesheet" href="global.css">
 </head>
 <body>
     <header>
         <div class="logo-container">
-            <a href="home.html" class="logo">E M I <span class="green">2</span> C</a>
+            <a href="selection.html" class="logo">E M I <span class="green">2</span> C</a>
             <p class="tagline">Track Carbon, Transform Cities!</p>
         </div>
-        <div class="menu-icon">
-            &#9776;
-        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="home.html">Home</a>
+            <a href="about-us.html">About Us</a>
+            <a href="history.html">History</a>
+            <a href="selection.html">Transport</a>
+          </div>
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
     </header>
 
     <main>
@@ -24,6 +30,7 @@
         </div>
 
         <form id="co2Form">
+        <div class="all-form">
             <label for="vehicleType">Vehicle Type</label>
             <select id="vehicleType" name="vehicleType" required>
                 <option value="car">Car</option>
@@ -42,6 +49,7 @@
 
             <label for="tripDistance">Trip Distance</label>
             <input type="number" id="tripDistance" placeholder="KM" required>
+        </div>
 
             <div class="additional-options">
                 <input type="checkbox" id="saveTrip" name="saveTrip">
@@ -61,15 +69,19 @@
     </main>
 
     <footer>
-        
-        <h1>About EMI2C</h1>
-        <p>EMI2C is a revolutionary application aimed at tracking carbon emissions and 
-        transforming cities to become more sustainable. </p>
-        <p> Our goal is to provide users with indispensable tools to monitor and reduce their carbon footprint.</p>
-    <p>The fact that you care, means a lot to our Earth.</p>
-        
+        <div class="footer-links">
+            <a href="#donate">Donate</a>
+            <a href="about-us.html">About Us</a>
+            <a href="#how-it-works">How It Works</a>
+    
+        </div>
+        <div class="social-media">
+            <a href="https://twitter.com/Emi2C" target="_blank">@Emi2C</a>
+            <a href="https://instagram.com/Emi2C" target="_blank">@Emi2C</a>
+        </div>
     </footer>
 
     <script src="private-transport.js"></script>
+    <script src="global.js"></script>
 </body>
 </html>
