@@ -57,22 +57,23 @@ form {
     margin-top: 30px;
 }
 
-label {
+.all-form label {
     display: block;
     margin-bottom: 5px;
     text-align: left;
+    margin-left: 154px;
 }
 
-select {
-    width: 100%;
+.all-form select {
+    width: 80%;
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 5px;
     border: 1px solid #ccc;
 }
 
-input {
-    width: 98%;
+.all-form input {
+    width: 78.5%;
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -86,22 +87,25 @@ input {
 }
 
 .additional-options input {
-    margin-right: 10px;
+    margin-left: 156px;
     margin-bottom: 20px;
-    width: 20px;
+    align-items: end;
     height: 20px;
 }
 
 .additional-options label {
     margin-bottom: 15px;
+    text-align: start;
+    margin-left: 10px;
 }
 
 .switch-container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 20px;
-    margin-bottom: 5px;
+    margin-right: 78px;
+    margin-bottom: 10px;
+    margin-top: -57px; 
 }
 
 .switch-link {
@@ -112,7 +116,9 @@ input {
 
 .switch-link span {
     display: inline-flex;
-    align-items: center; /* Align icon and text vertically */
+    align-items: center;
+    margin-right: 76px;
+    vertical-align: top;
 }
 
 .calculate-button {
